@@ -12,24 +12,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
             flex-direction: column;
+            background-color: white;
+        }
+        .page-logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: 50px;
+            background: url('data/logo.png') no-repeat center;
+            background-size: contain;
         }
         .news-container {
-            width: 50vw;
+            width: 30vw;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px;
+            margin: 10px;
             background: white;
-            margin-bottom: 20px;
         }
-        .header-logo {
-            width: 100%;
-            height: 40px;
-            background: url('data/image.png') no-repeat center;
-            background-size: contain;
+        .news-container:first-of-type {
+            margin-top: 200px;
+        }
+        .news-container:not(:first-of-type) {
+            margin-top: 20px;
         }
         .article-image img {
             width: 100%;
@@ -50,30 +57,31 @@
             margin-top: 10px;
             color: #555;
             font-size: 18px;
-            line-height: 34px;
+            line-height: 32px;
             letter-spacing: 0%;
         }
         .article-category {
             display: inline-block;
             margin-top: 10px;
             padding: 5px 10px;
-            background: #ddd;
+            background: #F2F2F2;
+            color: #5C5B5B;
             font-size: 12px;
             border-radius: 4px;
         }
         .separator-line {
-            margin-top: 10px;
-            height: 1px;
-            background: #ddd;
+            margin-top: 20px;
+            height: .6px;
+            background: #5C5B5B;
             width: 100%;
         }
     </style>
 </head>
 <body>
+    <div class="page-logo"></div>
     <div class="news-container">
-        <div class="header-logo"></div>
         <div class="article-image">
-            <img src="data/image.png" alt="News Article Image">
+            <img src="data/tech_news.png" alt="News Article Image">
         </div>
         <div class="article-content">
             <div class="article-title">Tech Industry Sees AI Boom</div>
@@ -84,7 +92,7 @@
     </div>
     <div class="news-container">
         <div class="article-image">
-            <img src="data/image.png" alt="News Article Image">
+            <img src="data/finance_news.png" alt="News Article Image">
         </div>
         <div class="article-content">
             <div class="article-title">Global Markets React to Economic Shifts</div>
@@ -95,34 +103,12 @@
     </div>
     <div class="news-container">
         <div class="article-image">
-            <img src="data/image.png" alt="News Article Image">
+            <img src="data/environment_news.png" alt="News Article Image">
         </div>
         <div class="article-content">
             <div class="article-title">Climate Change and Renewable Energy</div>
             <div class="article-description">Governments worldwide push for renewable energy adoption as climate concerns grow. Solar and wind power investments have surged, reducing dependence on fossil fuels. Scientists warn that immediate action is necessary to mitigate environmental damage. Green technologies are expected to dominate energy production in the coming decades.</div>
             <div class="article-category">Environment</div>
-        </div>
-        <div class="separator-line"></div>
-    </div>
-    <div class="news-container">
-        <div class="article-image">
-            <img src="data/image.png" alt="News Article Image">
-        </div>
-        <div class="article-content">
-            <div class="article-title">Breakthrough in Space Exploration</div>
-            <div class="article-description">NASA unveils plans for a new mission that aims to explore deep space like never before. The mission will involve cutting-edge technology, enabling scientists to gather data on distant galaxies. Experts believe these advancements could pave the way for human colonization of other planets. Funding for the project has received bipartisan support, highlighting its significance.</div>
-            <div class="article-category">Science</div>
-        </div>
-        <div class="separator-line"></div>
-    </div>
-    <div class="news-container">
-        <div class="article-image">
-            <img src="data/image.png" alt="News Article Image">
-        </div>
-        <div class="article-content">
-            <div class="article-title">Sports Legends Reflect on Their Careers</div>
-            <div class="article-description">Former sports icons share insights and reflections on their legendary careers in exclusive interviews. They discuss the challenges and triumphs that shaped their journeys. Many athletes emphasize the importance of discipline and perseverance. Fans get a rare glimpse into the personal lives of these celebrated figures.</div>
-            <div class="article-category">Sports</div>
         </div>
         <div class="separator-line"></div>
     </div>
